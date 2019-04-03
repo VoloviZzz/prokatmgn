@@ -1,0 +1,66 @@
+<link rel="stylesheet" href="/css/order.css">
+
+<div class="form">
+	<div class="title">
+		Закажите Автомобиль У Нас
+	</div>
+	<div class="form_elem car">
+		<select>
+			<% Cars.forEach(elem => {
+				%>
+				<option value="<%=elem.id%>"><%=elem.name%></option>
+				<%
+			});%>
+		</select>
+	</div>
+	<div class="form_elem name1">
+		<input type="text" placeholder="Фамилия">
+	</div>
+	<div class="form_elem name2">
+		<input type="text" placeholder="Имя">
+	</div>
+	<div class="form_elem name3">
+		<input type="text" placeholder="Отчество">
+	</div>
+	<div class="form_elem b_day">
+		<input type="text"  onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="Дата заказа">
+	</div>
+	<div class="form_elem phone">
+		<input type="text" placeholder="Телефон">
+	</div>
+	<%if (!user.admin) {
+		%><div class="btn btn-info">
+			<i class="fa fa-user-circle"></i> Регистрация
+		</div><%
+	}%>
+	<div class="btn btn-success" onclick="Alert.success('Запрос отправлен')">
+		<i class="fa fa-phone"></i> Заказать
+	</div>
+</div>
+
+<script src="/admins/js/order.js" defer></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<%#  %>

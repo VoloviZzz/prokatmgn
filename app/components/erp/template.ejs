@@ -1,0 +1,44 @@
+<script src="/vendors/chart.js/dist/Chart.js" defer></script>
+
+<link rel="stylesheet" href="/css/erp.css">
+<div class="admin">
+ <header class="admin__header">
+	 <a href="#" class="logo">
+		 <h1>ERP</h1>
+	 </a>
+	 <div class="toolbar">
+		 <div class="btns">
+			 <a href="http://localhost:3000/erp" class="btn btn--primary">prokat-k2</a>
+			 <a class="btn btn--primary selected">prokat-mgn</a>
+		 </div>
+		 <a href="/" class="logout">
+			 На главную
+		 </a>
+	 </div>
+ </header>
+ <nav class="admin__nav">
+	 <ul class="menu">
+		 <li class="menu__item">
+			 <a class="menu__link" href="#">Приборная Доска</a>
+		 </li>
+		 <li class="menu__item">
+			 <a class="menu__link" href="#">Товары</a>
+		 </li>
+		 <li class="menu__item">
+			 <a class="menu__link" href="#">Заказы</a>
+		 </li>
+		 <li class="menu__item">
+			 <a class="menu__link" href="#">Товары</a>
+		 </li>
+	 </ul>
+ </nav>
+ <main class="admin__main">
+	 <%- include("./dashbord.ejs") -%>
+
+ </main>
+
+</div>
+<script src="/js/erp.js" defer></script>
+<% if(user.adminMode) { %>
+	<script src="/admins/js/erp.js" defer></script>
+<% } %>

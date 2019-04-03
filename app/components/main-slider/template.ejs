@@ -1,0 +1,113 @@
+
+<link rel="stylesheet" href="/css/tariff.css">
+<div class='container'>
+
+<% Cars.forEach(elem => {
+	%>
+	<div class='product'>
+    <img src='<%=elem.img%>'>
+    <h2 class='header'><%=elem.name%></h2>
+    <p class='description'><%=elem.desc%></p>
+    <p class='price'><%=elem.price%> р.</p>
+		<% if(user.adminMode) {
+			%>
+			<div class='btn btn-danger remove_car' data-id="<%=elem.id%>" >Удалить</div>
+			<%
+		}%>
+		<a href="/order" class='btn'>Заказать</a>
+  </div>
+
+	<%
+}); %>
+
+<script src="/js/tariff.js" defer></script>
+<% if(user.adminMode) { %>
+<br>
+<br>
+<div class="btn btn-info" data-toggle="modal" data-target="#add_car">
+	Добавить автомобиль
+</div>
+
+<div class="modal fade" id="add_car" tabindex="-1" role="dialog"  aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+			<div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title">Добавить Автомобиль</h4>
+      </div>
+      <div class="modal-body">
+				<div class="adding-name-input form-group row">
+				  <label class="col-xs-2 col-form-label">Марка: </label>
+				  <div class="col-xs-10">
+				    <input class="form-control" type="text" >
+				  </div>
+				</div>
+				<div class="form-group adding-price-input row">
+				  <label class="col-xs-2 col-form-label">Цена: </label>
+				  <div class="col-xs-10">
+				    <input class="form-control" type="text" >
+				  </div>
+				</div>
+				<div class="adding-color-input form-group row">
+				  <label class="col-xs-2 col-form-label">Цвет: </label>
+				  <div class="col-xs-10">
+				    <input class="form-control" type="text" >
+				  </div>
+				</div>
+				<div class="adding-desc-input form-group row">
+				  <label class="col-xs-2 col-form-label">Описание: </label>
+				  <div class="col-xs-10">
+				    <textarea class="form-control"></textarea>
+				  </div>
+				</div>
+				<div class="adding-year-input form-group row">
+				  <label class="col-xs-2 col-form-label">Год: </label>
+				  <div class="col-xs-10">
+				    <input class="form-control" type="text" >
+				  </div>
+				</div>
+				<div class="adding-kpp-input form-group row">
+				  <label class="col-xs-2 col-form-label">КПП: </label>
+				  <div class="col-xs-10">
+				    <input  type="checkbox" >
+				  </div>
+				</div>
+				<div class="adding-condic-input form-group row">
+				  <label class="col-xs-2 col-form-label">Кондиционер: </label>
+				  <div class="col-xs-10">
+				    <input  type="checkbox" >
+				  </div>
+				</div>
+				<div class="adding-dvc-input form-group row">
+				  <label class="col-xs-2 col-form-label">ДВС: </label>
+				  <div class="col-xs-10">
+				    <input class="form-control" type="text" >
+				  </div>
+				</div>
+				<div class="adding-zalog-input form-group row">
+				  <label class="col-xs-2 col-form-label">Залог: </label>
+				  <div class="col-xs-10">
+				    <input class="form-control" type="text" >
+				  </div>
+				</div>
+				<div class="adding-img-input form-group row">
+				  <label class="col-xs-2 col-form-label">Изображение: </label>
+				  <div class="col-xs-10">
+						<div class="btn btn-success" onclick="$('#upload_photo').click()">
+							Загрузить фото
+						</div>
+				    <input style="display:none" class="form-control" type="file" id="upload_photo">
+				  </div>
+				</div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" id="add_new_car" class="btn btn-primary">Добавить Автомобиль</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="/admins/js/tariff.js" defer></script>
+<% } %>

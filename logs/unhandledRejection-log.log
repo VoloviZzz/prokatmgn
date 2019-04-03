@@ -1,0 +1,312 @@
+2018-12-19 17:23:18: Error: ER_ACCESS_DENIED_ERROR: Access denied for user 'root'@'localhost' (using password: YES)
+    at Handshake.Sequence._packetToError (/home/jesus/freelance/engine/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Handshake.ErrorPacket (/home/jesus/freelance/engine/node_modules/mysql/lib/protocol/sequences/Handshake.js:124:18)
+    at Protocol._parsePacket (/home/jesus/freelance/engine/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/home/jesus/freelance/engine/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/home/jesus/freelance/engine/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/home/jesus/freelance/engine/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/home/jesus/freelance/engine/node_modules/mysql/lib/Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (/home/jesus/freelance/engine/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/jesus/freelance/engine/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at Connection.connect (/home/jesus/freelance/engine/node_modules/mysql/lib/Connection.js:118:18)
+    at Promise (/home/jesus/freelance/engine/app/libs/db.js:16:13)
+    at new Promise (<anonymous>)
+    at Object.exports.connect (/home/jesus/freelance/engine/app/libs/db.js:10:25)
+    at Object.<anonymous> (/home/jesus/freelance/engine/app/app.js:75:4)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+
+2018-12-19 17:23:31: Error: ER_ACCESS_DENIED_ERROR: Access denied for user 'root'@'localhost' (using password: YES)
+    at Handshake.Sequence._packetToError (/home/jesus/freelance/engine/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Handshake.ErrorPacket (/home/jesus/freelance/engine/node_modules/mysql/lib/protocol/sequences/Handshake.js:124:18)
+    at Protocol._parsePacket (/home/jesus/freelance/engine/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/home/jesus/freelance/engine/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/home/jesus/freelance/engine/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/home/jesus/freelance/engine/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/home/jesus/freelance/engine/node_modules/mysql/lib/Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (/home/jesus/freelance/engine/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/jesus/freelance/engine/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at Connection.connect (/home/jesus/freelance/engine/node_modules/mysql/lib/Connection.js:118:18)
+    at Promise (/home/jesus/freelance/engine/app/libs/db.js:16:13)
+    at new Promise (<anonymous>)
+    at Object.exports.connect (/home/jesus/freelance/engine/app/libs/db.js:10:25)
+    at Object.<anonymous> (/home/jesus/freelance/engine/app/app.js:75:4)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+
+2018-12-19 17:23:47: Error: ER_BAD_DB_ERROR: Unknown database 'deUro'
+    at Handshake.Sequence._packetToError (/home/jesus/freelance/engine/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Handshake.ErrorPacket (/home/jesus/freelance/engine/node_modules/mysql/lib/protocol/sequences/Handshake.js:124:18)
+    at Protocol._parsePacket (/home/jesus/freelance/engine/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/home/jesus/freelance/engine/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/home/jesus/freelance/engine/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/home/jesus/freelance/engine/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/home/jesus/freelance/engine/node_modules/mysql/lib/Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (/home/jesus/freelance/engine/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/jesus/freelance/engine/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at Connection.connect (/home/jesus/freelance/engine/node_modules/mysql/lib/Connection.js:118:18)
+    at Promise (/home/jesus/freelance/engine/app/libs/db.js:16:13)
+    at new Promise (<anonymous>)
+    at Object.exports.connect (/home/jesus/freelance/engine/app/libs/db.js:10:25)
+    at Object.<anonymous> (/home/jesus/freelance/engine/app/app.js:75:4)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+
+2018-12-19 23:31:26: TypeError: Cannot read property 'childs' of undefined
+    at unflatten (/home/jesus/freelance/engine2/app/libs/header-nav.js:67:51)
+    at getHeaderNav.then (/home/jesus/freelance/engine2/app/libs/header-nav.js:28:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+2018-12-19 23:31:49: TypeError: Cannot read property 'childs' of undefined
+    at unflatten (/home/jesus/freelance/engine2/app/libs/header-nav.js:67:51)
+    at getHeaderNav.then (/home/jesus/freelance/engine2/app/libs/header-nav.js:28:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+2018-12-19 23:31:50: TypeError: Cannot read property 'childs' of undefined
+    at unflatten (/home/jesus/freelance/engine2/app/libs/header-nav.js:67:51)
+    at getHeaderNav.then (/home/jesus/freelance/engine2/app/libs/header-nav.js:28:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+2018-12-19 23:31:58: TypeError: Cannot read property 'childs' of undefined
+    at unflatten (/home/jesus/freelance/engine2/app/libs/header-nav.js:67:51)
+    at getHeaderNav.then (/home/jesus/freelance/engine2/app/libs/header-nav.js:28:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+2018-12-19 23:32:05: TypeError: Cannot read property 'childs' of undefined
+    at unflatten (/home/jesus/freelance/engine2/app/libs/header-nav.js:67:51)
+    at getHeaderNav.then (/home/jesus/freelance/engine2/app/libs/header-nav.js:28:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+2018-12-19 23:32:14: TypeError: Cannot read property 'childs' of undefined
+    at unflatten (/home/jesus/freelance/engine2/app/libs/header-nav.js:67:51)
+    at getHeaderNav.then (/home/jesus/freelance/engine2/app/libs/header-nav.js:28:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+2018-12-19 23:34:14: TypeError: Cannot read property 'childs' of undefined
+    at unflatten (/home/jesus/freelance/engine2/app/libs/header-nav.js:67:51)
+    at getHeaderNav.then (/home/jesus/freelance/engine2/app/libs/header-nav.js:28:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+2018-12-19 23:34:27: TypeError: Cannot read property 'childs' of undefined
+    at unflatten (/home/jesus/freelance/engine2/app/libs/header-nav.js:67:51)
+    at getHeaderNav.then (/home/jesus/freelance/engine2/app/libs/header-nav.js:28:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+2018-12-19 23:34:28: TypeError: Cannot read property 'childs' of undefined
+    at unflatten (/home/jesus/freelance/engine2/app/libs/header-nav.js:67:51)
+    at getHeaderNav.then (/home/jesus/freelance/engine2/app/libs/header-nav.js:28:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+2018-12-19 23:34:28: TypeError: Cannot read property 'childs' of undefined
+    at unflatten (/home/jesus/freelance/engine2/app/libs/header-nav.js:67:51)
+    at getHeaderNav.then (/home/jesus/freelance/engine2/app/libs/header-nav.js:28:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+2018-12-19 23:34:29: TypeError: Cannot read property 'childs' of undefined
+    at unflatten (/home/jesus/freelance/engine2/app/libs/header-nav.js:67:51)
+    at getHeaderNav.then (/home/jesus/freelance/engine2/app/libs/header-nav.js:28:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+2018-12-19 23:34:30: TypeError: Cannot read property 'childs' of undefined
+    at unflatten (/home/jesus/freelance/engine2/app/libs/header-nav.js:67:51)
+    at getHeaderNav.then (/home/jesus/freelance/engine2/app/libs/header-nav.js:28:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+2018-12-19 23:34:40: TypeError: Cannot read property 'childs' of undefined
+    at unflatten (/home/jesus/freelance/engine2/app/libs/header-nav.js:67:51)
+    at getHeaderNav.then (/home/jesus/freelance/engine2/app/libs/header-nav.js:28:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+2018-12-19 23:35:30: TypeError: Cannot read property 'childs' of undefined
+    at unflatten (/home/jesus/freelance/engine2/app/libs/header-nav.js:67:51)
+    at getHeaderNav.then (/home/jesus/freelance/engine2/app/libs/header-nav.js:28:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+2019-1-21 03:56:41: Error: ER_BAD_DB_ERROR: Unknown database 'prokat'
+    at Handshake.Sequence._packetToError (/home/jesus/freelance/prokat_mgn/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Handshake.ErrorPacket (/home/jesus/freelance/prokat_mgn/node_modules/mysql/lib/protocol/sequences/Handshake.js:124:18)
+    at Protocol._parsePacket (/home/jesus/freelance/prokat_mgn/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/home/jesus/freelance/prokat_mgn/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/home/jesus/freelance/prokat_mgn/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/home/jesus/freelance/prokat_mgn/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/home/jesus/freelance/prokat_mgn/node_modules/mysql/lib/Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (/home/jesus/freelance/prokat_mgn/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/jesus/freelance/prokat_mgn/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at Connection.connect (/home/jesus/freelance/prokat_mgn/node_modules/mysql/lib/Connection.js:118:18)
+    at Promise (/home/jesus/freelance/prokat_mgn/app/libs/db.js:16:13)
+    at new Promise (<anonymous>)
+    at Object.exports.connect (/home/jesus/freelance/prokat_mgn/app/libs/db.js:10:25)
+    at Object.<anonymous> (/home/jesus/freelance/prokat_mgn/app/app.js:75:4)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+
+2019-1-24 06:21:26: Error: Error: ER_BAD_FIELD_ERROR: Unknown column 'allow_index' in 'field list'
+    at Object.exports.add (/home/jesus/freelance/prokat_mgn/app/models/routes.js:51:17)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+2019-1-24 06:23:24: Error: Error: ER_BAD_FIELD_ERROR: Unknown column 'allow_index' in 'field list'
+    at Object.exports.add (/home/jesus/freelance/prokat_mgn/app/models/routes.js:51:17)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+2019-1-24 06:23:24: Error: Error: ER_BAD_FIELD_ERROR: Unknown column 'allow_index' in 'field list'
+    at Object.exports.add (/home/jesus/freelance/prokat_mgn/app/models/routes.js:51:17)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+2019-1-24 06:23:25: Error: Error: ER_BAD_FIELD_ERROR: Unknown column 'allow_index' in 'field list'
+    at Object.exports.add (/home/jesus/freelance/prokat_mgn/app/models/routes.js:51:17)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+2019-1-24 06:23:25: Error: Error: ER_BAD_FIELD_ERROR: Unknown column 'allow_index' in 'field list'
+    at Object.exports.add (/home/jesus/freelance/prokat_mgn/app/models/routes.js:51:17)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+2019-4-4 01:38:57: TypeError: Cannot use 'in' operator to search for 'sendData' in asdasd
+    at Router.post (/home/jesus/freelance/prokat_mgn/app/libs/routeHandler.js:193:55)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+2019-4-4 01:39:54: TypeError: Cannot read property 'status' of undefined
+    at Router.post (/home/jesus/freelance/prokat_mgn/app/libs/routeHandler.js:197:26)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+2019-4-4 01:41:38: TypeError: Cannot use 'in' operator to search for 'sendData' in asdasd
+    at Router.post (/home/jesus/freelance/prokat_mgn/app/libs/routeHandler.js:193:55)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+2019-4-4 01:42:20: TypeError: Cannot use 'in' operator to search for 'sendData' in asdasd
+    at Router.post (/home/jesus/freelance/prokat_mgn/app/libs/routeHandler.js:193:55)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+2019-4-4 01:45:28: TypeError: Cannot read property 'status' of undefined
+    at Router.post (/home/jesus/freelance/prokat_mgn/app/libs/routeHandler.js:197:26)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+2019-4-4 02:02:12: TypeError: Cannot read property 'status' of undefined
+    at Router.post (/home/jesus/freelance/prokat_mgn/app/libs/routeHandler.js:197:26)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+2019-4-4 02:02:58: TypeError: Cannot read property 'status' of undefined
+    at Router.post (/home/jesus/freelance/prokat_mgn/app/libs/routeHandler.js:197:26)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+2019-4-4 02:03:25: TypeError: Cannot read property 'status' of undefined
+    at Router.post (/home/jesus/freelance/prokat_mgn/app/libs/routeHandler.js:197:26)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+2019-4-4 02:07:36: TypeError: Cannot read property 'status' of undefined
+    at Router.post (/home/jesus/freelance/prokat_mgn/app/libs/routeHandler.js:197:26)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+2019-4-4 02:14:52: TypeError: Cannot read property 'status' of undefined
+    at Router.post (/home/jesus/freelance/prokat_mgn/app/libs/routeHandler.js:197:26)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+2019-4-4 02:15:44: TypeError: Cannot read property 'status' of undefined
+    at Router.post (/home/jesus/freelance/prokat_mgn/app/libs/routeHandler.js:197:26)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+2019-4-4 02:18:21: TypeError: Cannot read property 'status' of undefined
+    at Router.post (/home/jesus/freelance/prokat_mgn/app/libs/routeHandler.js:197:26)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+2019-4-4 02:19:10: /home/jesus/freelance/prokat_mgn/app/api/order2.js:24
+    Preview URL: 'http://prokat-mgn.ru/',
+            ^^^
+
+SyntaxError: Unexpected identifier
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Module.require (module.js:596:17)
+    at require (internal/module.js:11:18)
+    at requireDir (/home/jesus/freelance/prokat_mgn/node_modules/require-dir/index.js:128:33)
+
+2019-4-4 02:19:28: TypeError: Cannot read property 'status' of undefined
+    at Router.post (/home/jesus/freelance/prokat_mgn/app/libs/routeHandler.js:197:26)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+2019-4-4 02:19:47: TypeError: Cannot read property 'status' of undefined
+    at Router.post (/home/jesus/freelance/prokat_mgn/app/libs/routeHandler.js:197:26)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+2019-4-4 02:22:36: TypeError: Cannot read property 'status' of undefined
+    at Router.post (/home/jesus/freelance/prokat_mgn/app/libs/routeHandler.js:197:26)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+2019-4-4 02:22:39: TypeError: Cannot read property 'status' of undefined
+    at Router.post (/home/jesus/freelance/prokat_mgn/app/libs/routeHandler.js:197:26)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+2019-4-4 02:22:42: TypeError: Cannot read property 'status' of undefined
+    at Router.post (/home/jesus/freelance/prokat_mgn/app/libs/routeHandler.js:197:26)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+2019-4-4 02:22:46: TypeError: Cannot read property 'status' of undefined
+    at Router.post (/home/jesus/freelance/prokat_mgn/app/libs/routeHandler.js:197:26)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+2019-4-4 02:23:37: TypeError: Cannot read property 'status' of undefined
+    at Router.post (/home/jesus/freelance/prokat_mgn/app/libs/routeHandler.js:197:26)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+

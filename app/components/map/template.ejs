@@ -1,0 +1,16 @@
+
+<link rel="stylesheet" href="/css/map.css">
+<link rel="stylesheet" href="/vendors/leaflet/dist/leaflet.css">
+
+
+<div id="map" style="height: 500px; width: 100%"></div>
+
+<script src="/vendors/leaflet/dist/leaflet.js" defer></script>
+<script src="/vendors/leaflet.markercluster/dist/leaflet.markercluster.js" defer></script>
+<script src="/vendors/leaflet/dist/map.js" defer></script>
+
+
+<script src="/js/map.js" defer></script>
+<% if(user.adminMode) { %>
+	<script src="/admins/js/map.js" defer></script>
+<% } %>

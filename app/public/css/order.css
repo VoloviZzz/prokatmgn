@@ -1,0 +1,106 @@
+@media screen and (max-width:479px) {
+    .logo{
+        display: none;
+    }
+    .admin-panel{
+        display: none !important;
+    } 
+    .header-list-div{
+        display: none;
+    }
+    .menu-right div{
+        display: none !important;
+    }
+    .menu .open-menu-list{
+        position: absolute;
+        left: 0%;
+        display: block !important;
+    }
+    .document-header .menu{
+        height: 40px;
+    }
+    a:hover {
+        color: #2A8340 !important;
+    }
+    a:active {
+        color: #2A8340 !important;
+    }
+    
+  .form{
+    position: relative !important;
+        transform: translate(-50%,0%) !important;
+  }
+
+  .slider input,label{
+    display:none !important;
+    position: relative;
+  }
+
+  #landing{
+    font-size: 1em !important;
+  }
+
+
+
+  .document-footer {
+/*     width:  !important; */
+  }
+  #landing > .feature{
+    width: 100% !important;
+  }
+  #landing .slider-2 .content small {
+    display: none !important;
+  }
+  #landing .slider-2 .content h3 {
+    font-size: 1.3em !important;
+  }
+
+  .footer > * {
+    display: block;
+    width: 100% !important;
+  }
+  .footer > .subscribe > .email {
+    width: 100%;
+    transform: translate(-5px);
+  }
+  .footer > .subscribe > .email + button {
+    width: 100%;
+  }
+  .container {
+    padding: 0px !important;
+    padding-top: 0px !important;
+    text-align: center;
+  }  
+}
+
+
+.form{
+  position: absolute;
+  background-color: #3bb0fd;
+  top: 50%;
+  padding: 50px;
+  left:  50%;
+  transform: translate(-50%,-50%);
+  z-index: 99;
+}
+.form .title{
+  text-align: center;
+  font-size: 1.3em;
+}
+.form input{
+  background-color: #0000;
+  color: #000;
+  border: solid 0;
+  border-bottom: solid 2px #2880b9;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.form select{
+  background-color: #0000;
+  color: #000;
+  border: solid 0;
+  border-bottom: solid 2px #2880b9;
+  width: 100%;
+  margin: 10px 0;
+}

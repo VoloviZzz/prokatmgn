@@ -1,0 +1,73 @@
+<div class="footer">
+	<div class="column">
+		<%
+		HeaderRows.forEach(elem => {
+			%>
+			<a href="<%=elem.href%>"><%=elem.title%></a>
+			<%
+		});
+		 %>
+	</div>
+	<form class="column subscribe" action="javascript:void(0)">
+		<h4 class="caption">Заказать Звонок</h4>
+		<p class="summary">Оставь заявку на звонок
+		и мы перезвоним тебе в течении пяти минут</p>
+		<input class="email" type="number" placeholder="Введите ваш номер телефона" />
+		<button type="submit" onclick="Alert.success('Запрос отправлен')">Заказать</button>
+	</form>
+</div>
+
+	<footer class="document-footer">
+		<div class="container-fluid">
+			<div class="footer-row">
+
+				<%# <div class="leta-logo">
+					<a href="#">
+						<img style="height:  35px;" src="/img/de_uro/Pic/1.png" alt="deUre">
+					</a>
+				</div> %>
+				<div class="copyright">
+					<div class="line"></div>
+					<% if(user.adminMode) { -%>
+						<input class="js-set-siteConfig" style="height: 20px" data-target="footerText" type="text" name="footerText" placeholder="Введите текст для футера" value="<%= siteConfig.get('footerText') -%>">
+					<% } else { -%>
+						<span><%= siteConfig.get('footerText') -%></span>
+					<% } -%>
+				</div>
+				<div class="social">
+					<% if(user.adminMode) { -%>
+						<button class="btn btn-sm js-add-social-link">+</button>
+					<% } -%>
+					<% socialLinks.get().forEach((item) => { %>
+						<a class="js-social-btn social-btn" href="<%= item.href -%>" title="<%= item.title -%>">
+							<% if(user.adminMode) { -%>
+								<div class="js-social-link-form" style="display: none">
+									<button class="btn btn-sm js-socialLink-delete" data-id="<%= item.id -%>">Удалить</button>
+									<input class="js-socialLink-edit" data-target="href" data-id="<%= item.id -%>" type="text" name="href" placeholder="Ссылка" value="<%= item.href -%>" style="width: 70px">
+									<input class="js-socialLink-edit" data-target="title" data-id="<%= item.id -%>" type="text" name="title" placeholder="Заголовок" value="<%= item.title -%>" style="width: 70px">
+									<input class="js-socialLink-edit" data-target="icon" data-id="<%= item.id -%>" type="text" name="icon" placeholder="Иконка" value="<%= item.icon -%>" style="width: 70px">
+								</div>
+							<% } -%>
+							<i class="fa <%= item.icon ? item.icon : 'fa-question' -%>"></i>
+						</a>
+					<% }) -%>
+				</div>
+			</div>
+			<%- include('./metrics-block.ejs') -%>
+		</div>
+	</footer>
+	<script src="/vendors/jquery/jquery.min.js"></script>
+	<script src="/vendors/ckeditor/ckeditor.js"></script>
+	<script src="/vendors/ace/ace.js"></script>
+	<script src="/vendors/ace/ext-textarea.js"></script>
+	<script src="/vendors/bootstrap/dist/js/popper.min.js"></script>
+	<script src="/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="/js/application.js"></script>
+	<% if(!!user.adminMode === true) { -%>
+		<script src="/admins/js/admin.js"></script>
+	<% } -%>
+	<% if(user.admin) { -%>
+		<script src="/admins/js/toggle-admin.js"></script>
+	<% } %>
+</body>
+</html>
