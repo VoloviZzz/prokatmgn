@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-
+// const vhost = require( 'vhost' );
 const path = require('path');
 const ejs = require('ejs');
 const cookieSession = require('cookie-session');
@@ -10,7 +10,7 @@ const compression = require('compression');
 
 const config = require('../config');
 const db = require('./libs/db');
-const Model = require('./models/index');
+const Model1 = require('./models/index');
 
 app.use(compression());
 app.use(express.static(path.join(__dirname, 'public')));
@@ -53,7 +53,7 @@ app.use(setDefaultSessionData);
 // инизиализация переменных в приложении
 app.db = db;
 app.ejs = ejs;
-app.Model = Model;
+app.Model = Model1;
 app.express = express;
 app.locals.routesList = {};
 app.locals.libs = path.join(__dirname, 'libs');
@@ -72,7 +72,7 @@ app.viewsDir = global.ViewsDir = path.join(__dirname, 'views');
 
 global.imagesPath = 'http://system.mpkpru.ru/';
 
-db.connect().then(async () => {
+db.connect().then( async () => {
 
 	await require('./siteConfig')(app);
 
@@ -96,8 +96,8 @@ db.connect().then(async () => {
 	app.use(routeHandler);
 	app.use(errorHandler);
 
-	app.listen(config.web.port, (err) => {
+	app.listen(3001, (err) => {
 		if (err) return console.log("Ошибка запуска сервера:" + err.message);
-		console.log("Сервер запущен на порту " + config.web.port);
+		console.log("Сервер запущен на порту " + 3001);
 	})
 });

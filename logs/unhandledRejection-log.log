@@ -310,3 +310,8 @@ SyntaxError: Unexpected identifier
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:188:7)
 
+2019-4-15 03:34:21: TypeError: Cannot read property 'status' of undefined
+    at Router.post (/var/www/prokat_mgn/app/libs/routeHandler.js:197:26)
+    at <anonymous>
+    at process._tickDomainCallback (internal/process/next_tick.js:228:7)
+
